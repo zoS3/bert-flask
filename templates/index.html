@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>日本語BERT</title>
 </head>
-<body>
+<body style="padding-left: 100px">
+<h1>BERTで穴埋め問題を解く</h1>
+<p>[MASK]を一つだけ含む文章を入力してください</p>
+<p>例: 山田さんが[MASK]を見たのはこれが初めてでした。巨大だった。</p>
 <form method="post">
-    <textarea name="sent"></textarea>
-    <input type="submit">
+    <textarea name="sent" rows="4" cols="100" style="font-size: 20px;"></textarea><br>
+    <input type="submit" value="予測">
 </form>
+
+{% if request.form['sent'] %}
+    <h3>予測結果</h3>
+    <p>入力: {{ request.form['sent'] }}</p>
+    <p>[MASK]に入るのは・・・</p>
+    {% for cloze in clozes %}
+        {{ loop.index }}位: {{ cloze }}<br>
+    {% endfor %}
+{% endif %}
 </body>
 </html>
