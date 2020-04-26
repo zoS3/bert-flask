@@ -1,25 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <title>日本語BERT</title>
 </head>
-<body style="padding-left: 100px">
-<h1>BERTで穴埋め問題を解く</h1>
-<p>[MASK]を一つだけ含む文章を入力してください</p>
-<p>例: 山田さんが[MASK]を見たのはこれが初めてでした。巨大だった。</p>
-<form method="post">
-    <textarea name="sent" rows="4" cols="100" style="font-size: 20px;"></textarea><br>
-    <input type="submit" value="予測">
-</form>
+<body class="bg-light">
+<div class="container">
+    <div class="py-5 text-center">
+        <h1>BERTで穴埋め問題を解く</h1>
+    </div>
+    <div class="container">
+        <p>[MASK]を一つだけ含む文を入力してください。BERTが[MASK]に入りそうな単語を予測します。</p>
+        <p>例: 山田さんが[MASK]を見たのはこれが初めてでした。巨大だった。</p>
+        <form class="needs-validation" method="post" novalidate>
 
-{% if request.form['sent'] %}
-    <h3>予測結果</h3>
-    <p>入力: {{ request.form['sent'] }}</p>
-    <p>[MASK]に入るのは・・・</p>
-    {% for cloze in clozes %}
-        {{ loop.index }}位: {{ cloze }}<br>
-    {% endfor %}
-{% endif %}
+            <input type="text" name="sent" class="form-control" placeholder="文を入力" pattern=".*\[MASK\].*" required>
+            <div class="invalid-feedback">
+                [MASK]が含まれていません
+            </div>
+
+            <div class="py-3">
+                <button type="submit" class="btn btn-primary">予測</button>
+            </div>
+        </form>
+    </div>
+
+    <hr class="featurette-divider">
+
+    {% if request.form['sent'] %}
+        <div class="container">
+            <div class="card my-3">
+                <div class="card-header">
+                    あなたの入力
+                </div>
+                <div class="card-body">
+                    {{ request.form['sent'] }}
+                </div>
+            </div>
+            <div>
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>順位</th>
+                        <th>[MASK]に入る単語</th>
+                        <th>確率(%)</th>
+                    </tr>
+                    </thead>
+                    {% for word, prob in topk %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+                            <td>{{ word }}</td>
+                            <td>{{ "{:,.5f}".format(prob * 100) }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    {% endif %}
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
 </body>
 </html>

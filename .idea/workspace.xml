@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c12d99c-a764-45e7-aa20-8ec946af269b" name="Default Changelist" comment="bootstrapで見た目を整形&#10;予測確率を表示">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="1b3wbDCf1mlX8aUtijAZPpTjpKn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="bert-flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="flask" />
+      <option name="PARAMETERS" value="run" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bert-flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="run" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="bert-flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="flask" />
+      <option name="PARAMETERS" value="run" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.flask" />
+      <item itemvalue="Python.app" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c12d99c-a764-45e7-aa20-8ec946af269b" name="Default Changelist" comment="" />
+      <created>1583945706753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583945706753</updated>
+      <workItem from="1583945713732" duration="1935000" />
+      <workItem from="1584159171904" duration="7213000" />
+      <workItem from="1587874155490" duration="7663000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1584159475902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584159475902</updated>
+    </task>
+    <task id="LOCAL-00002" summary="flask 見た目以外は完成">
+      <created>1584163731516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584163731516</updated>
+    </task>
+    <task id="LOCAL-00003" summary="flask 見た目以外は完成">
+      <created>1584163798823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584163798823</updated>
+    </task>
+    <task id="LOCAL-00004" summary="heroku deploy">
+      <created>1584164007523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584164007523</updated>
+    </task>
+    <task id="LOCAL-00005" summary="heroku deploy">
+      <created>1584164404975</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584164404975</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create README.md">
+      <created>1584166002204</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584166002204</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bootstrapで見た目を整形&#10;予測確率を表示">
+      <created>1587884898083</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587884898083</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="flask 見た目以外は完成" />
+    <MESSAGE value="heroku deploy" />
+    <MESSAGE value="create README.md" />
+    <MESSAGE value="bootstrapで見た目を整形&#10;予測確率を表示" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrapで見た目を整形&#10;予測確率を表示" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1973" y="347" width="987" height="579" key="#xdebugger.evaluate" timestamp="1587883427370">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state x="1973" y="347" width="987" height="579" key="#xdebugger.evaluate/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587883427370" />
+    <state width="1406" height="466" key="DebuggerActiveHint" timestamp="1587883932602">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1406" height="466" key="DebuggerActiveHint/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587883932602" />
+    <state x="1540" y="11" width="1720" height="857" key="DiffContextDialog" timestamp="1587875119382">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state x="1540" y="11" width="1720" height="857" key="DiffContextDialog/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587875119382" />
+    <state width="1878" height="275" key="GridCell.Tab.0.bottom" timestamp="1587884841683">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841683" />
+    <state width="1878" height="275" key="GridCell.Tab.0.center" timestamp="1587884841682">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.0.center/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841682" />
+    <state width="1878" height="275" key="GridCell.Tab.0.left" timestamp="1587884841682">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.0.left/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841682" />
+    <state width="1878" height="275" key="GridCell.Tab.0.right" timestamp="1587884841683">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.0.right/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841683" />
+    <state width="1878" height="275" key="GridCell.Tab.1.bottom" timestamp="1587884841686">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841686" />
+    <state width="1878" height="275" key="GridCell.Tab.1.center" timestamp="1587884841685">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.1.center/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841685" />
+    <state width="1878" height="275" key="GridCell.Tab.1.left" timestamp="1587884841684">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.1.left/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841684" />
+    <state width="1878" height="275" key="GridCell.Tab.1.right" timestamp="1587884841685">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="275" key="GridCell.Tab.1.right/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841685" />
+    <state x="2065" y="146" width="670" height="676" key="search.everywhere.popup" timestamp="1587884174097">
+      <screen x="1440" y="-89" width="1920" height="1057" />
+    </state>
+    <state x="2065" y="146" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884174097" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bert_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1587883178637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bert_flask$flask.coverage" NAME="flask Coverage Results" MODIFIED="1584161933687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

@@ -1,8 +1,7 @@
 import torch
-from flask import Flask, jsonify, request, render_template
-from transformers.modeling_bert import BertForMaskedLM, BertModel
+from flask import Flask, request, render_template
+from transformers.modeling_bert import BertForMaskedLM
 from transformers.tokenization_bert_japanese import BertJapaneseTokenizer
-import json
 
 
 app = Flask(__name__)
@@ -16,17 +15,20 @@ def get_prediction(s):
     input_ids = tokenizer.encode(s, return_tensors="pt")
     masked_index = torch.where(input_ids == tokenizer.mask_token_id)[1].tolist()[0]
     with torch.no_grad():
-        result = model(input_ids)
-    result_indices = torch.topk(result[0][:, masked_index], k=10).indices[0].tolist()
-    return [tokenizer.decode([i]) for i in result_indices]
+        # (1, seq_len, vocab_size)
+        logits, = model(input_ids)
+        # (1, vocab_size)
+        probs_for_mask = torch.softmax(logits[0, masked_index], dim=-1)
+    topk_probs, topk_indices = torch.topk(probs_for_mask, k=10)
+    return [tokenizer.decode([i]) for i in topk_indices.tolist()], topk_probs.tolist()
 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         s = request.form['sent']
-        clozes = get_prediction(s)
-        return render_template('index.html', clozes=clozes)
+        words, probs = get_prediction(s)
+        return render_template('index.html', topk=zip(words, probs))
     return render_template('index.html')
 
 
