@@ -5,8 +5,9 @@ from transformers.tokenization_bert_japanese import BertJapaneseTokenizer
 
 
 app = Flask(__name__)
-tokenizer = BertJapaneseTokenizer.from_pretrained("bert-base-japanese-whole-word-masking")
-model = BertForMaskedLM.from_pretrained("bert-base-japanese-whole-word-masking")
+model_name = "cl-tohoku/bert-base-japanese-whole-word-masking"
+tokenizer = BertJapaneseTokenizer.from_pretrained(model_name)
+model = BertForMaskedLM.from_pretrained(model_name)
 model.eval()
 
 

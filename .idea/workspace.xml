@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3c12d99c-a764-45e7-aa20-8ec946af269b" name="Default Changelist" comment="bootstrapで見た目を整形&#10;予測確率を表示">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +50,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -154,6 +159,7 @@
       <workItem from="1583945713732" duration="1935000" />
       <workItem from="1584159171904" duration="7213000" />
       <workItem from="1587874155490" duration="7663000" />
+      <workItem from="1593614777711" duration="1191000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1584159475902</created>
@@ -275,13 +281,17 @@
       <screen x="1440" y="-89" width="1920" height="1057" />
     </state>
     <state width="1878" height="275" key="GridCell.Tab.1.right/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884841685" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1593614837858">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593614837858" />
     <state x="2065" y="146" width="670" height="676" key="search.everywhere.popup" timestamp="1587884174097">
       <screen x="1440" y="-89" width="1920" height="1057" />
     </state>
     <state x="2065" y="146" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-89.1920.1057@1440.-89.1920.1057" timestamp="1587884174097" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bert_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1587883178637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bert_flask$flask.coverage" NAME="flask Coverage Results" MODIFIED="1584161933687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/bert_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1587883178637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
